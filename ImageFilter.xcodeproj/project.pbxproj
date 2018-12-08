@@ -26,6 +26,14 @@
 		7016378B21BBDCFA00C130D5 /* ImageEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7016378A21BBDCFA00C130D5 /* ImageEdit.storyboard */; };
 		7016378F21BBE35100C130D5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016378E21BBE35100C130D5 /* BaseViewController.swift */; };
 		7016379121BBE6A300C130D5 /* ImageEditModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016379021BBE6A300C130D5 /* ImageEditModuleInput.swift */; };
+		7016379421BBF19700C130D5 /* ImageEditDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016379321BBF19700C130D5 /* ImageEditDisplayManager.swift */; };
+		7016379721BBF5A100C130D5 /* CellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016379621BBF5A100C130D5 /* CellFactory.swift */; };
+		7016379921BBF60900C130D5 /* UITableView+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016379821BBF60900C130D5 /* UITableView+Factory.swift */; };
+		7016379D21BC0DDF00C130D5 /* ImageFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7016379B21BC0DDF00C130D5 /* ImageFilterCell.swift */; };
+		7016379E21BC0DDF00C130D5 /* ImageFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7016379C21BC0DDF00C130D5 /* ImageFilterCell.xib */; };
+		701637A121BC0EC700C130D5 /* ImageFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701637A021BC0EC700C130D5 /* ImageFilters.swift */; };
+		701637A421BC1C0200C130D5 /* ImageEditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701637A321BC1C0200C130D5 /* ImageEditService.swift */; };
+		701637A621BC331600C130D5 /* UIImage+FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701637A521BC331600C130D5 /* UIImage+FixOrientation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +79,14 @@
 		7016378A21BBDCFA00C130D5 /* ImageEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageEdit.storyboard; sourceTree = "<group>"; };
 		7016378E21BBE35100C130D5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7016379021BBE6A300C130D5 /* ImageEditModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditModuleInput.swift; sourceTree = "<group>"; };
+		7016379321BBF19700C130D5 /* ImageEditDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditDisplayManager.swift; sourceTree = "<group>"; };
+		7016379621BBF5A100C130D5 /* CellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFactory.swift; sourceTree = "<group>"; };
+		7016379821BBF60900C130D5 /* UITableView+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Factory.swift"; sourceTree = "<group>"; };
+		7016379B21BC0DDF00C130D5 /* ImageFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFilterCell.swift; sourceTree = "<group>"; };
+		7016379C21BC0DDF00C130D5 /* ImageFilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFilterCell.xib; sourceTree = "<group>"; };
+		701637A021BC0EC700C130D5 /* ImageFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFilters.swift; sourceTree = "<group>"; };
+		701637A321BC1C0200C130D5 /* ImageEditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditService.swift; sourceTree = "<group>"; };
+		701637A521BC331600C130D5 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +139,8 @@
 			children = (
 				7016376721BBBC0200C130D5 /* ApplicationLayer */,
 				7016376821BBBC7500C130D5 /* PresentationLayer */,
+				701637A221BC1BD600C130D5 /* BuisnessLogicLayer */,
+				701637A721BC3D7600C130D5 /* Models */,
 				7016377821BBCF6E00C130D5 /* CoreLayer */,
 				7016376621BBBB9C00C130D5 /* SupportingFiles */,
 			);
@@ -178,8 +196,9 @@
 		7016376921BBC00E00C130D5 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				7016378E21BBE35100C130D5 /* BaseViewController.swift */,
+				7016379521BBF57F00C130D5 /* Factory */,
 				7016376E21BBC54F00C130D5 /* Transition */,
+				7016378E21BBE35100C130D5 /* BaseViewController.swift */,
 				7016378221BBDB3C00C130D5 /* ShowAlert.swift */,
 				7016378421BBDBF500C130D5 /* MediaSource.swift */,
 			);
@@ -244,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				7016378021BBD20000C130D5 /* UIViewControllerExtensions.swift */,
+				7016379821BBF60900C130D5 /* UITableView+Factory.swift */,
+				701637A521BC331600C130D5 /* UIImage+FixOrientation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				7016378D21BBE27A00C130D5 /* ModuleInput */,
+				7016379221BBEF5000C130D5 /* View */,
 				7016378921BBDCD400C130D5 /* Controller */,
 			);
 			path = ImageEdit;
@@ -279,6 +301,48 @@
 				7016379021BBE6A300C130D5 /* ImageEditModuleInput.swift */,
 			);
 			path = ModuleInput;
+			sourceTree = "<group>";
+		};
+		7016379221BBEF5000C130D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7016379A21BC0DB900C130D5 /* Cells */,
+				7016379321BBF19700C130D5 /* ImageEditDisplayManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7016379521BBF57F00C130D5 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				7016379621BBF5A100C130D5 /* CellFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		7016379A21BC0DB900C130D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7016379B21BC0DDF00C130D5 /* ImageFilterCell.swift */,
+				7016379C21BC0DDF00C130D5 /* ImageFilterCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		701637A221BC1BD600C130D5 /* BuisnessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				701637A321BC1C0200C130D5 /* ImageEditService.swift */,
+			);
+			path = BuisnessLogicLayer;
+			sourceTree = "<group>";
+		};
+		701637A721BC3D7600C130D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				701637A021BC0EC700C130D5 /* ImageFilters.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7016378B21BBDCFA00C130D5 /* ImageEdit.storyboard in Resources */,
+				7016379E21BC0DDF00C130D5 /* ImageFilterCell.xib in Resources */,
 				7016374321BBBB3100C130D5 /* LaunchScreen.storyboard in Resources */,
 				7016374021BBBB3100C130D5 /* Assets.xcassets in Resources */,
 				7016373E21BBBB3000C130D5 /* Main.storyboard in Resources */,
@@ -415,17 +480,24 @@
 			files = (
 				7016378121BBD20000C130D5 /* UIViewControllerExtensions.swift in Sources */,
 				7016379121BBE6A300C130D5 /* ImageEditModuleInput.swift in Sources */,
+				7016379421BBF19700C130D5 /* ImageEditDisplayManager.swift in Sources */,
 				7016378521BBDBF500C130D5 /* MediaSource.swift in Sources */,
 				7016376B21BBC02C00C130D5 /* TransitionController.swift in Sources */,
 				7016373921BBBB3000C130D5 /* AppDelegate.swift in Sources */,
 				7016378821BBDCC900C130D5 /* ImageEditViewController.swift in Sources */,
 				7016378F21BBE35100C130D5 /* BaseViewController.swift in Sources */,
+				7016379921BBF60900C130D5 /* UITableView+Factory.swift in Sources */,
+				701637A121BC0EC700C130D5 /* ImageFilters.swift in Sources */,
 				7016377521BBCAC300C130D5 /* MainViewController.swift in Sources */,
 				7016378321BBDB3C00C130D5 /* ShowAlert.swift in Sources */,
 				7016376D21BBC54800C130D5 /* TransitionConfigurationHolder.swift in Sources */,
 				7016377B21BBCFE900C130D5 /* PhotoLibraryPermissionsReachability.swift in Sources */,
+				701637A421BC1C0200C130D5 /* ImageEditService.swift in Sources */,
+				7016379D21BC0DDF00C130D5 /* ImageFilterCell.swift in Sources */,
 				7016377E21BBD00300C130D5 /* CameraPermissionsReachability.swift in Sources */,
 				7016377021BBC58C00C130D5 /* AnyModuleInput.swift in Sources */,
+				701637A621BC331600C130D5 /* UIImage+FixOrientation.swift in Sources */,
+				7016379721BBF5A100C130D5 /* CellFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

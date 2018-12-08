@@ -32,19 +32,38 @@
                                     <action selector="didTapCloseButton:" destination="2ns-dZ-4Cc" eventType="touchUpInside" id="HA0-Nd-SMs"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f54-20-UQe">
+                                <rect key="frame" x="0.0" y="444" width="375" height="223"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRU-w7-ikL">
+                                <rect key="frame" x="314" y="28" width="45" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="didTapShareButton:" destination="2ns-dZ-4Cc" eventType="touchUpInside" id="U6m-ii-ngN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="f54-20-UQe" firstAttribute="top" secondItem="CLe-x5-0Wg" secondAttribute="bottom" id="0PI-Jr-NxO"/>
+                            <constraint firstItem="1rM-E9-y4E" firstAttribute="trailing" secondItem="f54-20-UQe" secondAttribute="trailing" id="4x9-8G-jI9"/>
                             <constraint firstItem="1rM-E9-y4E" firstAttribute="trailing" secondItem="CLe-x5-0Wg" secondAttribute="trailing" id="C7C-FT-XAS"/>
                             <constraint firstItem="CLe-x5-0Wg" firstAttribute="top" secondItem="E6v-d1-Imx" secondAttribute="bottom" constant="8" id="Ecb-rg-WIg"/>
+                            <constraint firstItem="1rM-E9-y4E" firstAttribute="bottom" secondItem="f54-20-UQe" secondAttribute="bottom" id="HIc-RJ-O5k"/>
+                            <constraint firstItem="f54-20-UQe" firstAttribute="leading" secondItem="1rM-E9-y4E" secondAttribute="leading" id="IFK-bd-ZkW"/>
                             <constraint firstItem="E6v-d1-Imx" firstAttribute="leading" secondItem="1rM-E9-y4E" secondAttribute="leading" constant="16" id="JrQ-rY-wZb"/>
                             <constraint firstItem="CLe-x5-0Wg" firstAttribute="leading" secondItem="1rM-E9-y4E" secondAttribute="leading" id="Py3-Db-Klk"/>
+                            <constraint firstItem="rRU-w7-ikL" firstAttribute="top" secondItem="1rM-E9-y4E" secondAttribute="top" constant="8" id="XdM-TB-ida"/>
                             <constraint firstItem="E6v-d1-Imx" firstAttribute="top" secondItem="1rM-E9-y4E" secondAttribute="top" constant="8" id="a5n-Ly-H5a"/>
+                            <constraint firstItem="1rM-E9-y4E" firstAttribute="trailing" secondItem="rRU-w7-ikL" secondAttribute="trailing" constant="16" id="vyd-FH-VW8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1rM-E9-y4E"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="CLe-x5-0Wg" id="Ls7-Rn-q0U"/>
+                        <outlet property="tableView" destination="f54-20-UQe" id="PCU-qj-u6L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dq1-zV-hxx" userLabel="First Responder" sceneMemberID="firstResponder"/>

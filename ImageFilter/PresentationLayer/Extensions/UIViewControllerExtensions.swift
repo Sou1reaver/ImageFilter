@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIViewController: ShowAlert {
-    
     func showAlert(message: String) {
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -18,7 +17,6 @@ extension UIViewController: ShowAlert {
 }
 
 extension UIViewController: PhotoLibraryPermissionsReachability {
-    
     func checkPhotoLibraryPermission() {
         checkPhotoLibraryAuthorizationStatus { [weak self] (success) in
             if !success {
@@ -29,7 +27,6 @@ extension UIViewController: PhotoLibraryPermissionsReachability {
 }
 
 extension UIViewController: CameraPermissionsReachability {
-    
     func checkCameraPermission() {
         checkCameraAuthorizationStatus {  [weak self] (success) in
             if !success {

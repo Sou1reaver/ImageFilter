@@ -9,6 +9,5 @@
 import Foundation
 
 struct TransitionConfigurationHolder {
-    
     let configurationClosure: (AnyModuleInput) -> Void
 }
