@@ -15,20 +15,6 @@ class BaseViewController: UIViewController, TransitionController {
 
     }
     
-    func openActivityViewController(with activityItems: [Any],
-                                    excludedActivityTypes: [UIActivity.ActivityType]?,
-                                    completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler?) {
-        
-
-        let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
-        activityViewController.completionWithItemsHandler = completionWithItemsHandler
-        activityViewController.popoverPresentationController?.sourceView = view
-        activityViewController.popoverPresentationController?.sourceRect = view.frame
-        
-        activityViewController.excludedActivityTypes = excludedActivityTypes
-        present(activityViewController, animated: true, completion: nil)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let holder = sender as? TransitionConfigurationHolder {

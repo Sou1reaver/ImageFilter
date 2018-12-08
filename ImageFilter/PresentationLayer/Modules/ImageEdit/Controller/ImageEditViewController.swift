@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageEditViewController: BaseViewController {
+class ImageEditViewController: BaseViewController, ActivityViewControllerShowing {
     
     override var prefersStatusBarHidden: Bool {
         return true

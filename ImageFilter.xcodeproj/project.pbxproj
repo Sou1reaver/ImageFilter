@@ -34,6 +34,7 @@
 		701637A121BC0EC700C130D5 /* ImageFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701637A021BC0EC700C130D5 /* ImageFilters.swift */; };
 		701637A421BC1C0200C130D5 /* ImageEditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701637A321BC1C0200C130D5 /* ImageEditService.swift */; };
 		701637A621BC331600C130D5 /* UIImage+FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701637A521BC331600C130D5 /* UIImage+FixOrientation.swift */; };
+		701637A921BC408700C130D5 /* ActivityViewControllerShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701637A821BC408700C130D5 /* ActivityViewControllerShowing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		701637A021BC0EC700C130D5 /* ImageFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFilters.swift; sourceTree = "<group>"; };
 		701637A321BC1C0200C130D5 /* ImageEditService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditService.swift; sourceTree = "<group>"; };
 		701637A521BC331600C130D5 /* UIImage+FixOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+FixOrientation.swift"; sourceTree = "<group>"; };
+		701637A821BC408700C130D5 /* ActivityViewControllerShowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewControllerShowing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				7016378E21BBE35100C130D5 /* BaseViewController.swift */,
 				7016378221BBDB3C00C130D5 /* ShowAlert.swift */,
 				7016378421BBDBF500C130D5 /* MediaSource.swift */,
+				701637A821BC408700C130D5 /* ActivityViewControllerShowing.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				7016379921BBF60900C130D5 /* UITableView+Factory.swift in Sources */,
 				701637A121BC0EC700C130D5 /* ImageFilters.swift in Sources */,
 				7016377521BBCAC300C130D5 /* MainViewController.swift in Sources */,
+				701637A921BC408700C130D5 /* ActivityViewControllerShowing.swift in Sources */,
 				7016378321BBDB3C00C130D5 /* ShowAlert.swift in Sources */,
 				7016376D21BBC54800C130D5 /* TransitionConfigurationHolder.swift in Sources */,
 				7016377B21BBCFE900C130D5 /* PhotoLibraryPermissionsReachability.swift in Sources */,
